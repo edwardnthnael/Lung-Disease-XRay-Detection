@@ -1,0 +1,26 @@
+# Compiled frontend assets
+/public/build
+/public/hot
+
+# Dependencies
+/node_modules
+/vendor
+
+# Environment files
+.env
+.env.backup
+.env.production
+
+# IDEs and editors
+.idea
+.vscode
+
+# Laravel-specific
+/storage/*.key
+/storage/app/public/xray_images/*
+!/storage/app/public/xray_images/.gitignore
+storage/framework/
+storage/logs/
+
+# Testing
+.phpunit.result.cache
