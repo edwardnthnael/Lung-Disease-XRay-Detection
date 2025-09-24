@@ -1,64 +1,58 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# Lungs Disease X-Ray Detection
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Deskripsi Proyek
 
-## About Laravel
+Proyek "Lungs X-Ray Detection System" adalah aplikasi web inovatif yang dirancang untuk membantu dalam deteksi awal penyakit paru-paru melalui analisis citra X-ray dada menggunakan kecerdasan buatan (AI). Aplikasi ini memungkinkan pengguna untuk mengunggah gambar X-ray, yang kemudian akan diproses oleh model AI berbasis Google Vertex AI untuk memberikan diagnosa potensi penyakit seperti Pneumonia, COVID-19, Tuberculosis, atau Fibrosis, beserta tingkat kepercayaan dan penjelasan singkat.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Tujuan utama proyek ini adalah untuk menyediakan alat bantu yang user-friendly dan efisien bagi tenaga medis atau individu untuk mendapatkan analisis awal X-ray paru-paru, mempercepat proses skrining, dan mendukung keputusan diagnostik.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Fitur Utama
 
-## Learning Laravel
+*   **Autentikasi Pengguna:** Sistem pendaftaran dan login yang aman untuk pengguna.
+*   **Unggah Citra X-Ray:** Kemampuan untuk mengunggah gambar X-ray dada dalam format umum (JPEG, PNG, JPG).
+*   **Analisis AI Real-time:** Integrasi dengan Google Vertex AI untuk menganalisis citra X-ray dan mendeteksi potensi penyakit paru-paru.
+*   **Hasil Diagnosa Komprehensif:** Menampilkan diagnosa utama, tingkat kepercayaan (confidence), detail persentase untuk berbagai kondisi (Normal, Pneumonia, COVID-19, Tuberculosis, Fibrosis), dan penjelasan berdasarkan temuan AI.
+*   **Riwayat Diagnosa:** Menyimpan dan menampilkan riwayat diagnosa yang telah dilakukan oleh pengguna.
+*   **Antarmuka Pengguna yang Responsif:** Desain yang user-friendly dan adaptif untuk berbagai perangkat.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Teknologi yang Digunakan
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+*   **Backend:**
+    *   PHP 8.x
+    *   Laravel Framework 9.x / 10.x
+    *   Composer
+    *   MySQL
+    *   Google Vertex AI (untuk model AI)
+    *   Carbon (untuk penanganan tanggal dan waktu)
+*   **Frontend:**
+    *   HTML5
+    *   CSS3
+    *   JavaScript
+    *   Blade Templating Engine (Laravel)
+*   **Deployment (Contoh):**
+    *   Nginx / Apache
+    *   Docker (opsional)
+    *   Google Cloud Platform (untuk hosting Vertex AI dan mungkin aplikasi)
 
-## Laravel Sponsors
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
-### Premium Partners
+## Penggunaan
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+1.  **Akses Aplikasi:** Buka browser Anda dan navigasi ke `http://127.0.0.1:8000`.
+2.  **Daftar/Login:** Buat akun baru atau masuk menggunakan kredensial yang sudah ada.
+3.  **Unggah X-Ray:** Di halaman dashboard, Anda akan menemukan formulir untuk mengunggah gambar X-ray. Pilih file gambar (JPEG, PNG, JPG) dan masukkan nama pasien.
+4.  **Lihat Hasil Diagnosa:** Setelah mengunggah, sistem akan memproses gambar dan menampilkan hasil diagnosa dari AI, termasuk penyakit yang diprediksi, tingkat kepercayaan, dan penjelasan.
+5.  **Riwayat:** Anda dapat melihat semua riwayat diagnosa yang telah Anda lakukan.
 
-## Contributing
+## Kontribusi
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Proyek ini merupakan hasil kerja tim.
 
-## Code of Conduct
+*   **Peran saya dalam Project ini yaitu :**
+    *   **Pengembangan Antarmuka Pengguna (UI):** Bertanggung jawab penuh dalam membangun tampilan aplikasi sesuai dengan desain Figma yang telah disepakati, memastikan konsistensi visual dan fungsionalitas.
+    *   **Penanganan Input dan Output Data:** Mengimplementasikan logika frontend untuk menangani input gambar X-ray dari pengguna dan menampilkan hasil diagnosa yang diterima dari backend secara dinamis.
+    *   **Desain Pengalaman Pengguna (UX):** Fokus pada penciptaan tampilan yang user-friendly, intuitif, dan mudah diakses, memastikan pengalaman pengguna yang optimal.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## Security Vulnerabilities
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
